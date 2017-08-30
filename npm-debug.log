@@ -1,0 +1,76 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'Z:\\プログラミング\\nodejs\\\\node.exe',
+1 verbose cli   'Z:\\プログラミング\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'ejs',
+1 verbose cli   '--save-dev' ]
+2 info using npm@1.2.14
+3 info using node@v0.10.0
+4 verbose node symlink Z:\プログラミング\nodejs\\node.exe
+5 verbose read json Z:\プログラミング\src\package.json
+6 warn package.json odk2017@0.0.0 No README.md file found!
+7 verbose read json Z:\プログラミング\src\node_modules\ejs\package.json
+8 verbose read json Z:\プログラミング\src\node_modules\express\package.json
+9 verbose from cache Z:\プログラミング\src\package.json
+10 verbose readDependencies using package.json deps
+11 verbose cache add [ 'ejs@~2.5.6', null ]
+12 verbose cache add name=undefined spec="ejs@~2.5.6" args=["ejs@~2.5.6",null]
+13 verbose parsed url { protocol: null,
+13 verbose parsed url   slashes: null,
+13 verbose parsed url   auth: null,
+13 verbose parsed url   host: null,
+13 verbose parsed url   port: null,
+13 verbose parsed url   hostname: null,
+13 verbose parsed url   hash: null,
+13 verbose parsed url   search: null,
+13 verbose parsed url   query: null,
+13 verbose parsed url   pathname: 'ejs@~2.5.6',
+13 verbose parsed url   path: 'ejs@~2.5.6',
+13 verbose parsed url   href: 'ejs@~2.5.6' }
+14 verbose cache add name="ejs" spec="~2.5.6" args=["ejs","~2.5.6"]
+15 verbose parsed url { protocol: null,
+15 verbose parsed url   slashes: null,
+15 verbose parsed url   auth: null,
+15 verbose parsed url   host: null,
+15 verbose parsed url   port: null,
+15 verbose parsed url   hostname: null,
+15 verbose parsed url   hash: null,
+15 verbose parsed url   search: null,
+15 verbose parsed url   query: null,
+15 verbose parsed url   pathname: '~2.5.6',
+15 verbose parsed url   path: '~2.5.6',
+15 verbose parsed url   href: '~2.5.6' }
+16 verbose addNamed [ 'ejs', '~2.5.6' ]
+17 verbose addNamed [ null, '>=2.5.6- <2.6.0-' ]
+18 silly lockFile d9507ff5-ejs-2-5-6 ejs@~2.5.6
+19 verbose lock ejs@~2.5.6 C:\Users\user\AppData\Roaming\npm-cache\d9507ff5-ejs-2-5-6.lock
+20 silly addNameRange { name: 'ejs', range: '>=2.5.6- <2.6.0-', hasData: false }
+21 verbose url raw ejs
+22 verbose url resolving [ 'https://registry.npmjs.org/', './ejs' ]
+23 verbose url resolved https://registry.npmjs.org/ejs
+24 info trying registry request attempt 1 at 09:15:56
+25 http GET https://registry.npmjs.org/ejs
+26 info retry will retry, error on last attempt: Error: connect ETIMEDOUT
+27 info trying registry request attempt 2 at 09:16:28
+28 http GET https://registry.npmjs.org/ejs
+29 info retry will retry, error on last attempt: Error: connect ETIMEDOUT
+30 info trying registry request attempt 3 at 09:17:49
+31 http GET https://registry.npmjs.org/ejs
+32 silly lockFile d9507ff5-ejs-2-5-6 ejs@~2.5.6
+33 silly lockFile d9507ff5-ejs-2-5-6 ejs@~2.5.6
+34 error Error: connect ETIMEDOUT
+34 error     at errnoException (net.js:863:11)
+34 error     at Object.afterConnect [as oncomplete] (net.js:854:19)
+35 error If you need help, you may report this log at:
+35 error     <http://github.com/isaacs/npm/issues>
+35 error or email it to:
+35 error     <npm-@googlegroups.com>
+36 error System Windows_NT 6.1.7601
+37 error command "Z:\\プログラミング\\nodejs\\\\node.exe" "Z:\\プログラミング\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "ejs" "--save-dev"
+38 error cwd Z:\プログラミング\src
+39 error node -v v0.10.0
+40 error npm -v 1.2.14
+41 error syscall connect
+42 error code ETIMEDOUT
+43 error errno ETIMEDOUT
+44 verbose exit [ 1, true ]
