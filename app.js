@@ -5,9 +5,7 @@ var app = express();
 app.set('view engine', 'ejs');
 
 // サーバーの設定
-var server = app.listen(3000, function(){
-    console.log("Node.js is listening to PORT:" + server.address().port);
-});
+var server = app.listen(process.env.PORT || 5000);
 
 app.get("/", function(req, res, next){ //追加
     res.render('index.ejs', {text: 'こんにちは'}); //追加
@@ -18,7 +16,7 @@ app.get("/hello", function(req, res, next){
 var hour = new Date().getHours();
   if(req.query.text.indexOf("斉藤 ")>=0) {
     message = '齊藤さんだぞっ';
-  } else if(req.query.text.indexOf('斉藤')>=0|| 
+  } else if(req.query.text.indexOf('斉藤')>=0||
             req.query.text.indexOf('斉藤')>=0||
             req.query.text.indexOf('斉藤')>=0){
     message = '漢字が違うぞ';
@@ -28,4 +26,3 @@ message='ぜんぜん違うぞっ';
 message+='\n「'+req.query.text+'」といいましたか？'
   res.json(message); //'こんばんは'をmessageに書き換え
 });
-
