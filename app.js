@@ -35,8 +35,8 @@ app.get("/hello", function(req, res, next){
 
 const line = require('@line/bot-sdk');
 const config = {
-  channelAccessToken: 'TNiyVqdOEV+Tt4SheNECr1+tQMuraIB/cecrXyJdU4m2/BWsI8q9mjbZVCB07Y6GnFvm4NGa/lOGGI4TZ8kx/ShG/TWdSJC5cM6NnurM6EwYPolW6KCcAQBp3/H/RUFGEkZoBBrCoKDHnhBst7f6TAdB04t89/1O/w1cDnyilFU=',
-  channelSecret: '14a05618292ac080796aa15278ebcc1e'
+  channelAccessToken: 'eoWLyyR1pE/3g5EYPiAXGlj630QTUTfLvNk3lUxJEDNhnU/7y+W0HPpfGgLIbo+Ib05bV2DveuAsbH06BL2cEx5+0cdUHhNj0Pdb3mpS1qTftDdHXcFaOUJY4k+mDK7OmezmAbwaipU71zq5h/0jegdB04t89/1O/w1cDnyilFU='
+  channelSecret: '4ff280de52380d648afc2489340401ab'
 };
 
 app.post('/line', line.middleware(config), function(req, res) {
