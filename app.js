@@ -24,7 +24,7 @@ app.get("/hello", function(req, res, next){
       message='欲しい！だけど自分で勝たないといけない・・・'}
     else if(text.indexOf("超絶に挑戦しろ")){
       message='今の状態では厳しいから、もう少し強くなってからにします！'}
-    else if(test.indexOf("ツクヨミに勝ちたい")){
+    else if(text.indexOf("ツクヨミに勝ちたい")){
       message='それはわかる気がします・・・'｝
   // var hour = new Date().getHours();
   // if(req.query.text.indexOf("斉藤 ")>=0) {
