@@ -13,16 +13,16 @@ app.get("/", function(req, res, next){ //追加
 
 function getMessageText(text) {
   var message = 'こんにちは'; //追加
-  if(req.query.text.indexOf("モンスト")){
+  if(req.query.text.indexOf("モンスト")>=0){
       message='昨日クシナダに挑戦した・・・けど負けた'
   }
-  else if(text.indexOf("イザナミもってる")){
+  else if(text.indexOf("イザナミもってる")>=0){
     message='欲しい！だけど自分で勝たないといけない・・・'
   }
-  else if(text.indexOf("超絶に挑戦しろ")){
+  else if(text.indexOf("超絶に挑戦しろ")>=0){
     message='今の状態では厳しいから、もう少し強くなってからにします！'
   }
-  else if(text.indexOf("ツクヨミに勝ちたい")){
+  else if(text.indexOf("ツクヨミに勝ちたい")>=0){
     message= 'それはわかる気がします・・・'
   }
   return message;
