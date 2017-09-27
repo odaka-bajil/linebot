@@ -13,7 +13,7 @@ app.get("/", function(req, res, next){ //追加
 
 function getMessageText(text) {
   var message = 'こんにちは'; //追加
-  if(req.query.text.indexOf("モンスト")>=0){
+  if(text.indexOf("モンスト")>=0){
       message='昨日クシナダに挑戦した・・・けど負けた'
   }
   else if(text.indexOf("イザナミもってる")>=0){
