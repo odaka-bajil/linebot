@@ -12,20 +12,24 @@ app.get("/", function(req, res, next){ //追加
 }); //追加
 
 function getMessageText(text) {
-  var message = '「' + text + '」といいましたか？';
+  var message = 'こんにちは'; //追加
+  if(req.query.text.indexOf("モンスト")){
+      message='昨日クシナダに挑戦した・・・けど負けた'
+  }
+  else if(text.indexOf("イザナミもってる")){
+    message='欲しい！だけど自分で勝たないといけない・・・'
+  }
+  else if(text.indexOf("超絶に挑戦しろ")){
+    message='今の状態では厳しいから、もう少し強くなってからにします！'
+  }
+  else if(text.indexOf("ツクヨミに勝ちたい")){
+    message= 'それはわかる気がします・・・'
+  }
   return message;
 }
 
 app.get("/hello", function(req, res, next){
-  var message = 'こんにちは'; //追加
-  if(req.query.text.indexOf("モンスト")){
-    message='昨日クシナダに挑戦した・・・けど負けた'}
-    else if(text.indexOf("イザナミもってる")){
-      message='欲しい！だけど自分で勝たないといけない・・・'}
-    else if(text.indexOf("超絶に挑戦しろ")){
-      message='今の状態では厳しいから、もう少し強くなってからにします！'}
-    else if(text.indexOf("ツクヨミに勝ちたい")){
-      message='それはわかる気がします・・・'｝
+
   // var hour = new Date().getHours();
   // if(req.query.text.indexOf("斉藤 ")>=0) {
   //   message = '齊藤さんだぞっ';
