@@ -25,7 +25,6 @@ function getMessageText(text) {
   else if(text.indexOf("ツクヨミに勝ちたい")>=0){
     message= 'それはわかる気がします・・・'
   }
-}
 else if(text.indexOf("モンストで超絶に挑戦するけど一緒にやる？")>=0){
  message='やる、だけどなんのクエストをやるんだ？'
 }
