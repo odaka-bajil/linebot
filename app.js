@@ -36,7 +36,7 @@ else if(text.indexOf("クシナダ零かイザナミ廻をやろうと思って�
 
 
 }
-else if(text.indexOf("確かに・・・")>=0){
+else if(text.indexOf("確かに")>=0){
  message='ツクヨミかイザナギが欲しいから、俺はそのクエストがやりたい'
 }
 
