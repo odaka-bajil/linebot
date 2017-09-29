@@ -25,6 +25,27 @@ function getMessageText(text) {
   else if(text.indexOf("ツクヨミに勝ちたい")>=0){
     message= 'それはわかる気がします・・・'
   }
+}
+else if(text.indexOf("モンストで超絶に挑戦するけど一緒にやる？")>=0){
+ message='やる、だけどなんのクエストをやるんだ？'
+}
+
+}
+else if(text.indexOf("クシナダ零かイザナミ廻をやろうと思っている")>=0){
+ message='さすがに零と廻は強すぎないか・・・'
+}
+
+
+}
+else if(text.indexOf("確かに・・・")>=0){
+ message='ツクヨミかイザナギが欲しいから、俺はそのクエストがやりたい'
+}
+
+
+}
+else if(text.indexOf("今クエストできてるのクシナダしかないけどどうする？")>=0){
+ message='クシナダでも別に俺は構わない'
+}
   return message;
 }
 
