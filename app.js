@@ -39,7 +39,6 @@ else if(text.indexOf("今クエストできてるのクシナダしかないけ�
  message='クシナダでも別に俺は構わない'
 }else {
   message=apiAccessSample(text);
-}
   return message;
 }
 
