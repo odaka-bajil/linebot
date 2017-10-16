@@ -35,8 +35,8 @@ function getMessageText(text) {
   else if(text.indexOf("確かに")>=0){
    message='まぁ頑張れ'
   }
-  else if(text.indexOf("今クエストできてるのクシナダしかないけどどうする？")>=0){
-   message='クシナダでも別に俺は構わない'
+  else if(text.indexOf("後日　2回挑戦して勝てた！")>=0){
+   message='勝ててよかったな'
   }else {
     message=apiAccessSample(text);
     return message;
