@@ -37,6 +37,10 @@ function getMessageText(text) {
   }
   else if(text.indexOf("後日　2回挑戦して勝てた！")>=0){
    message='勝ててよかったな'
+  else if(text.indexOf("次はツクヨミに挑戦する")>=0){
+   message='いや、お前のパーティじゃ無理だろ'
+   else if(text.indexOf("なんで？")>=0){
+  　message='だってあのクエスト、ハートなしだぞ'
   }else {
     message=apiAccessSample(text);
     return message;
