@@ -15,25 +15,25 @@ app.get("/", function(req, res, next){ //追加
 function getMessageText(text) {
   var message = 'こんにちは'; //追加
   if(text.indexOf("モンスト")>=0){
-      message='昨日クシナダに挑戦した・・・けど負けた'
+      message='これはただの妄想です、気になる人だけやってください'
   }
-  else if(text.indexOf("イザナミもってる")>=0){
-    message='欲しい！だけど自分で勝たないといけない・・・'
+  else if(text.indexOf("ヤマトタケルに挑戦する")>=0){
+    message='勝てるのか？そのパーティで'
   }
-  else if(text.indexOf("超絶に挑戦しろ")>=0){
-    message='今の状態では厳しいから、もう少し強くなってからにします！'
+  else if(text.indexOf("わからん")>=0){
+    message='取り合えずお前が持ってるロビン・フッドをもっていけ'
   }
-  else if(text.indexOf("ツクヨミに勝ちたい")>=0){
-    message= 'それはわかる気がします・・・'
+  else if(text.indexOf("了解")>=0){
+    message= '後パンドラ連れていけ'
   }
-  else if(text.indexOf("モンストで超絶に挑戦するけど一緒にやる？")>=0){
-   message='やる、だけどなんのクエストをやるんだ？'
+  else if(text.indexOf("進化？神化？")>=0){
+   message='取り合えず神化を連れていったほうがいい'
   }
-  else if(text.indexOf("クシナダ零かイザナミ廻をやろうと思っている")>=0){
-   message='さすがに零と廻は強すぎないか・・・'
+  else if(text.indexOf("なんでパンドラ？")>=0){
+   message='単純にストライクショットが強いから'
   }
   else if(text.indexOf("確かに")>=0){
-   message='ツクヨミかイザナギが欲しいから、俺はそのクエストがやりたい'
+   message='まぁ頑張れ'
   }
   else if(text.indexOf("今クエストできてるのクシナダしかないけどどうする？")>=0){
    message='クシナダでも別に俺は構わない'
