@@ -172,3 +172,4 @@ function _getPhraseFromKotohaAPI(phrase) {
     console.log(JSON.parse(response.body)); //JSONというフォーマットを変換
     return JSON.parse(response.body) || [];
 }
+}
