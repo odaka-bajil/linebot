@@ -63,9 +63,10 @@ else if(text.indexOf("クシナダ")>=0){
 　message='踊り狂っちゃえ～！ストライクショット！'
   }else {
     message=apiAccessSample(text);
-    return message;
-  }
 
+  }
+  return message;
+}
 app.get("/hello", function(req, res, next){
 
   // var hour = new Date().getHours();
