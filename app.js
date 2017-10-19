@@ -15,57 +15,56 @@ app.get("/", function(req, res, next){ //追加
 function getMessageText(text) {
   var message = 'こんにちは'; //追加
   if(text.indexOf("モンスト")>=0){
-      message='STEART'
+      return='STEART'
   }
   else if(text.indexOf("ヤマトタケル")>=0){
-    message='いざ、天下無双の件、ストライクショット！'
+    return'いざ、天下無双の件、ストライクショット！'
   }
   else if(text.indexOf("ノア")>=0){
-    message='新しい世界が、ここから始まる'
+    return'新しい世界が、ここから始まる'
   }
   else if(text.indexOf("パンドラ")>=0){
-    message= 'アッチャー。箱、開いちゃったドラ'
+    return 'アッチャー。箱、開いちゃったドラ'
   }
   else if(text.indexOf("イザナミ")>=0){
-   message='敵を穿て、ストライクショット！'
+    return'敵を穿て、ストライクショット！'
   }
   else if(text.indexOf("ワールド")>=0){
-   message='世界よ、我が前に跪け'
+   return'世界よ、我が前に跪け'
   }
   else if(text.indexOf("黄泉")>=0){
-   message='僕が命じる。黄泉軍よ・・・滅ぼせ'
+   return'僕が命じる。黄泉軍よ・・・滅ぼせ'
   }
   else if(text.indexOf("ルシュファー")>=0){
-   message='我、堕天の王なり！'
+   return'我、堕天の王なり！'
  }
   else if(text.indexOf("ゼウス")>=0){
-   message='雷帝よ、天を揺るがせ！これが全能の力よ！'
+   return'雷帝よ、天を揺るがせ！これが全能の力よ！'
  }
    else if(text.indexOf("ツクヨミ")>=0){
-  　message='ストライクショット！闇を照らす光あれ'
+  　return'ストライクショット！闇を照らす光あれ'
 }
   else if(text.indexOf("エルドラド")>=0){
- 　message='予告どおり、黄金はすべていただいた！！'
- }
- else if(text.indexOf("スサノオ")>=0){
-　message='荒ぶる魂よ！海を割り・・・大地を砕け！'
+  return'予告どおり、黄金はすべていただいた！！'
+}
+else if(text.indexOf("スサノオ")>=0){
+return'荒ぶる魂よ！海を割り・・・大地を砕け！'
 }
 else if(text.indexOf("ラファエル")>=0){
-　message='聖なる水よ、今ここにその軌跡を示したまへ'
+return'聖なる水よ、今ここにその軌跡を示したまへ'
 }
 else if(text.indexOf("オーディン")>=0){
-　message='グングニルよ、我が魔力を持って殲滅せよ'
+return'グングニルよ、我が魔力を持って殲滅せよ'
 }
 else if(text.indexOf("アリス")>=0){
-　return'ねぇ、蜂の巣にしても良いかな？良いよね？'
+return'ねぇ、蜂の巣にしても良いかな？良いよね？'
 }
 else if(text.indexOf("クシナダ")>=0){
-　message='踊り狂っちゃえ～！ストライクショット！'
-  }else {
+return'踊り狂っちゃえ～！ストライクショット！'
+}else {
     message=apiAccessSample(text);
-
+    return message;
   }
-  return message;
 }
 app.get("/hello", function(req, res, next){
 
