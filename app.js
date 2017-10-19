@@ -15,7 +15,7 @@ app.get("/", function(req, res, next){ //追加
 function getMessageText(text) {
   var message = 'こんにちは'; //追加
   if(text.indexOf("モンスト")>=0){
-      return='STEART'
+      return'STEART'
   }
   else if(text.indexOf("ヤマトタケル")>=0){
     return'いざ、天下無双の件、ストライクショット！'
