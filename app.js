@@ -61,7 +61,6 @@ else if(text.indexOf("アリス")>=0){
 }
 else if(text.indexOf("クシナダ")>=0){
 　message='踊り狂っちゃえ～！ストライクショット！'
-}
   }else {
     message=apiAccessSample(text);
     return message;
