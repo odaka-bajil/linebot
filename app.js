@@ -57,7 +57,7 @@ else if(text.indexOf("オーディン")>=0){
 　message='グングニルよ、我が魔力を持って殲滅せよ'
 }
 else if(text.indexOf("アリス")>=0){
-　message='ねぇ、蜂の巣にしても良いかな？良いよね？'
+　return'ねぇ、蜂の巣にしても良いかな？良いよね？'
 }
 else if(text.indexOf("クシナダ")>=0){
 　message='踊り狂っちゃえ～！ストライクショット！'
