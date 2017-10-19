@@ -66,7 +66,7 @@ else if(text.indexOf("クシナダ")>=0){
     message=apiAccessSample(text);
     return message;
   }
-}
+
 app.get("/hello", function(req, res, next){
 
   // var hour = new Date().getHours();
