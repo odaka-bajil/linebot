@@ -64,6 +64,9 @@ return'踊り狂っちゃえ～！ストライクショット！'
 }
 else if(text.indexOf("最新情報")>=0){
 return'http://www.odakasangyogijutsu-h.fks.ed.jp/'
+}
+else if(text.indexOf("使っているソフト")>=0){
+return'JavaScript'
 }else {
     message=apiAccessSample(text);
     return message;
