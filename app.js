@@ -67,6 +67,9 @@ return'http://www.odakasangyogijutsu-h.fks.ed.jp/'
 }
 else if(text.indexOf("使っている言語")>=0){
 return'JavaScript'
+}
+else if(text.indexOf("11月3日")>=0){
+return'http://www.odakasangyogijutsu-h.fks.ed.jp/?page_id=133'
 }else {
     message=apiAccessSample(text);
     return message;
