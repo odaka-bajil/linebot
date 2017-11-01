@@ -35,7 +35,7 @@ function getMessageText(text) {
   else if(text.indexOf("黄泉")>=0){
    return'僕が命じる。黄泉軍よ・・・滅ぼせ'
   }
-  else if(text.indexOf("ルシファー")>=0){
+  else if(text.indexOf("ルシュファー")>=0){
    return'我、堕天の王なり！'
  }
   else if(text.indexOf("ゼウス")>=0){
@@ -65,7 +65,7 @@ return'踊り狂っちゃえ～！ストライクショット！'
 else if(text.indexOf("最新情報")>=0){
 return'http://www.odakasangyogijutsu-h.fks.ed.jp/'
 }
-else if(text.indexOf("使っているソフト")>=0){
+else if(text.indexOf("使っている言語")>=0){
 return'JavaScript'
 }else {
     message=apiAccessSample(text);
