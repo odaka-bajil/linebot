@@ -73,6 +73,9 @@ return'http://www.odakasangyogijutsu-h.fks.ed.jp/?page_id=133'
 }
 else if(text.indexOf("使い方")>=0){
 return'モンストのキャラクターの名前を入れると、ある言葉が返ってきます...全部で15種類、ほかにも違う言葉を入れるとアニメの言葉が返ってきます'
+}
+else if(text.indexOf("製作者")>=0){
+return'このBOTを作った経緯は偶然やっていたゲームのモンストをBOTにしてみようかな～と単純な理由です・・・。'
 }else {
     message=apiAccessSample(text);
     return message;
