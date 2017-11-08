@@ -72,7 +72,7 @@ else if(text.indexOf("11月3日")>=0){
 return'http://www.odakasangyogijutsu-h.fks.ed.jp/?page_id=133'
 }
 else if(text.indexOf("使い方")>=0){
-return'LINEに追加してメッセージを送信する'
+return'モンストのキャラクターの名前を入れると、ある言葉が返ってきます...全部で15種類、ほかにも違う言葉を入れるとアニメの言葉が返ってきます'
 }
 else if(text.indexOf("")>=0){
 return''
