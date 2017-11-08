@@ -17,33 +17,65 @@ app.get("/", function(req, res, next){ //追加
 function getMessageText(text) {
   var message = 'こんにちは'; //追加
   if(text.indexOf("モンスト")>=0){
-      message='昨日クシナダに挑戦した・・・けど負けた'
+    return'STEART'
   }
-  else if(text.indexOf("イザナミもってる")>=0){
-    message='欲しい！だけど自分で勝たないといけない・・・'
+  else if(text.indexOf("ヤマトタケル")>=0){
+    return'いざ、天下無双の件、ストライクショット！'
   }
-  else if(text.indexOf("超絶に挑戦しろ")>=0){
-    message='今の状態では厳しいから、もう少し強くなってからにします！'
+  else if(text.indexOf("ノア")>=0){
+    return'新しい世界が、ここから始まる'
   }
-  else if(text.indexOf("ツクヨミに勝ちたい")>=0){
-    message= 'それはわかる気がします・・・'
+  else if(text.indexOf("パンドラ")>=0){
+    return 'アッチャー。箱、開いちゃったドラ'
   }
-  else if(text.indexOf("モンストで超絶に挑戦するけど一緒にやる？")>=0){
-   message='やる、だけどなんのクエストをやるんだ？'
+  else if(text.indexOf("イザナミ")>=0){
+    return'敵を穿て、ストライクショット！'
   }
-  else if(text.indexOf("クシナダ零かイザナミ廻をやろうと思っている")>=0){
-   message='さすがに零と廻は強すぎないか・・・'
+  else if(text.indexOf("ワールド")>=0){
+   return'世界よ、我が前に跪け'
   }
-  else if(text.indexOf("確かに")>=0){
-   message='ツクヨミかイザナギが欲しいから、俺はそのクエストがやりたい'
+  else if(text.indexOf("黄泉")>=0){
+   return'僕が命じる。黄泉軍よ・・・滅ぼせ'
   }
-  else if(text.indexOf("今クエストできてるのクシナダしかないけどどうする？")>=0){
-   return timeSample();
- } else if(text.indexOf('学校について') >= 0) {
-   return replyImageSample();
+  else if(text.indexOf("ルシファー")>=0){
+   return'我、堕天の王なり！'
  }
-
-  else {
+  else if(text.indexOf("ゼウス")>=0){
+   return'雷帝よ、天を揺るがせ！これが全能の力よ！'
+ }
+   else if(text.indexOf("ツクヨミ")>=0){
+  　return'ストライクショット！闇を照らす光あれ'
+}
+  else if(text.indexOf("エルドラド")>=0){
+  return'予告どおり、黄金はすべていただいた！！'
+}
+else if(text.indexOf("スサノオ")>=0){
+return'荒ぶる魂よ！海を割り・・・大地を砕け！'
+}
+else if(text.indexOf("ラファエル")>=0){
+return'聖なる水よ、今ここにその軌跡を示したまへ'
+}
+else if(text.indexOf("オーディン")>=0){
+return'グングニルよ、我が魔力を持って殲滅せよ'
+}
+else if(text.indexOf("アリス")>=0){
+return'ねぇ、蜂の巣にしても良いかな？良いよね？'
+}
+else if(text.indexOf("クシナダ")>=0){
+return'踊り狂っちゃえ～！ストライクショット！'
+}
+else if(text.indexOf("最新情報")>=0){
+return'学校のホームページhttp://www.odakasangyogijutsu-h.fks.ed.jp/'
+}
+else if(text.indexOf("使っている言語")>=0){
+return'JavaScript'
+}
+else if(text.indexOf("11月3日")>=0){
+return'http://www.odakasangyogijutsu-h.fks.ed.jp/?page_id=133'
+}
+else if(text.indexOf("使い方")>=0){
+return'モンストのキャラクターの名前を入れると、ある言葉が返ってきます...全部で15種類、ほかにも違う言葉を入れるとアニメの言葉が返ってきます'
+}else {
     message=apiAccessSample(text);
     return message;
   }
