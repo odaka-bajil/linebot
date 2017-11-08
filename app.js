@@ -35,7 +35,7 @@ function getMessageText(text) {
   else if(text.indexOf("黄泉")>=0){
    return'僕が命じる。黄泉軍よ・・・滅ぼせ'
   }
-  else if(text.indexOf("ルシュファー")>=0){
+  else if(text.indexOf("ルシファー")>=0){
    return'我、堕天の王なり！'
  }
   else if(text.indexOf("ゼウス")>=0){
@@ -70,6 +70,9 @@ return'JavaScript'
 }
 else if(text.indexOf("11月3日")>=0){
 return'http://www.odakasangyogijutsu-h.fks.ed.jp/?page_id=133'
+}
+else if(text.indexOf("使い方")>=0){
+return'LINEに追加してメッセージを送信する'
 }else {
     message=apiAccessSample(text);
     return message;
