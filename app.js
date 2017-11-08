@@ -63,7 +63,7 @@ else if(text.indexOf("クシナダ")>=0){
 return'踊り狂っちゃえ～！ストライクショット！'
 }
 else if(text.indexOf("最新情報")>=0){
-return'http://www.odakasangyogijutsu-h.fks.ed.jp/'
+return'学校のホームページ　http://www.odakasangyogijutsu-h.fks.ed.jp/'
 }
 else if(text.indexOf("使っている言語")>=0){
 return'JavaScript'
@@ -73,6 +73,9 @@ return'http://www.odakasangyogijutsu-h.fks.ed.jp/?page_id=133'
 }
 else if(text.indexOf("使い方")>=0){
 return'LINEに追加してメッセージを送信する'
+}
+else if(text.indexOf("")>=0){
+return''
 }else {
     message=apiAccessSample(text);
     return message;
