@@ -63,7 +63,7 @@ else if(text.indexOf("クシナダ")>=0){
 return'踊り狂っちゃえ～！ストライクショット！'
 }
 else if(text.indexOf("最新情報")>=0){
-return'学校のホームページ　http://www.odakasangyogijutsu-h.fks.ed.jp/'
+return'学校のホームページhttp://www.odakasangyogijutsu-h.fks.ed.jp/'
 }
 else if(text.indexOf("使っている言語")>=0){
 return'JavaScript'
