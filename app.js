@@ -1,6 +1,8 @@
 // expressを読み込み
 var express = require("express");
 var request = require('sync-request');
+var fs = require('fs');
+var csvSync = require('csv-parse/lib/sync'); // requiring sync module
 var app = express();
 
 app.set('view engine', 'ejs');
@@ -185,4 +187,21 @@ function _getPhraseFromKotohaAPI(phrase) {
     );
     console.log(JSON.parse(response.body)); //JSONというフォーマットを変換
     return JSON.parse(response.body) || [];
+}
+
+function getMessageTextFromCSV(text) {
+  var file = 'input.csv';
+  var data = fs.readFileSync(file);
+
+  var res = csvSync(data);
+
+  matchedList = res.filter(function(record) {
+    if(text.indexOf(record[0]) >= 0) {
+      return true;
+    } else {
+      false;
+    }
+  })
+  return matchedList[0][1];
+
 }
