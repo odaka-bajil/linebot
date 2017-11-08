@@ -199,7 +199,7 @@ function getMessageTextFromCSV(text) {
     if(text.indexOf(record[0]) >= 0) {
       return true;
     } else {
-      false;
+      return false;
     }
   })
   return matchedList[0][1];
