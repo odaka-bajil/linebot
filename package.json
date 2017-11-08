@@ -18,6 +18,7 @@
     "ejs": "^2.5.6"
   },
   "devDependencies": {
+    "csv-parse": "^2.0.0",
     "ejs": "^2.5.6",
     "sync-request": "^4.1.0"
   }
