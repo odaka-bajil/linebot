@@ -199,6 +199,13 @@ function getMessageTextFromCSV(text) {
 
   matchedList = res.filter(function(record) {
     if(text.indexOf(record[0]) >= 0) {
+      if(record.length>2){
+        for(var i=2;i<record.length; i++){
+          if(text.indexOf(record[i])<0){
+            return false;
+        }
+      }
+    }
       return true;
     } else {
       return false;
