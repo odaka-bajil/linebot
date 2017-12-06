@@ -211,10 +211,6 @@ function getMessageTextFromCSV(text) {
       return false;
     }
   })
-  if(matchedList[0]) {
-    return matchedList[0][1];
-  } else {
-    return '';
-  }
+  return matchedList[0][1];
 
 }
