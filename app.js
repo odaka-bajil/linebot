@@ -22,7 +22,7 @@ function getMessageText(text) {
     return'STEART'
   }
   else if(text.indexOf("ヤマトタケル")>=0){
-    return'いざ、天下無双の件、ストライクショット！'
+    return'いざ、天下無双の剣、ストライクショット！'
   }
   else if(text.indexOf("ノア")>=0){
     return'新しい世界が、ここから始まる'
