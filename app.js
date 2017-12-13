@@ -17,7 +17,11 @@ app.get("/", function(req, res, next){ //追加
 function getMessageText(text) {
   var message = 'こんにちは';
     message = getMessageTextFromCSV(text);
+    if(message >=0){
     return message;//追加
+  }else}
+  return"モンストのキャラクター名をいれてください"
+}
   if(text.indexOf("モンスト")>=0){
     return'STEART'
   }
