@@ -16,9 +16,9 @@ app.get("/", function(req, res, next){ //追加
 
 function getMessageText(text) {
   var message = 'こんにちは';
-  message = getMessageTextFromCSV(text);
-  var message = getTextmessageFromcsv();
-    if(message >= 0){
+  var message = getMessageTextFromCSV();
+//  var message = getTextmessageFromcsv();
+    if(message > 0){
     return message;//追加
   }else{
   return"モンストのキャラクター名をいれてください"
