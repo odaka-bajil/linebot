@@ -19,7 +19,7 @@ function getMessageText(text) {
     message = getMessageTextFromCSV();
     if(message >=0){
     return message;//追加
-  }else}
+  }else{
   return"モンストのキャラクター名をいれてください"
 }
   if(text.indexOf("モンスト")>=0){
