@@ -21,7 +21,7 @@ function getMessageText(text) {
 //    if(message > 0){
     return message;//追加
   //}else{
-  //return"モンストのキャラクター名をいれてください"
+//return"モンストのキャラクター名をいれてください"
 }
   if(text.indexOf("モンスト")>=0){
     return'STEART'
